@@ -19,7 +19,7 @@ from pipelines import VExpressPipeline
 from pipelines.utils import draw_kps_image, save_video
 from pipelines.utils import retarget_kps
 
-import spaces
+# import spaces
 
 # 引数用ダミークラス
 class args_dum:
@@ -164,7 +164,7 @@ def get_scheduler():
     scheduler = DDIMScheduler(**scheduler_kwargs)
     return scheduler
 
-@spaces.GPU
+# @spaces.GPU
 def fix_face(image, audio, out_path):
     # args = parse_args()
     args = args_dum()
